@@ -9,6 +9,7 @@ html, body {
 main {
     padding-left: 20%;
     position: relative;
+    overflow-x: hidden;
 }
 
 main #video {
