@@ -1,0 +1,166 @@
+
+html, body {
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Commissioner', sans-serif;
+}
+
+main {
+    padding-left: 20%;
+    position: relative;
+}
+
+main #video {
+    width: 100%;
+    position: relative;
+    height: 86vh;
+}
+
+main .overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .phrase {
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+}
+
+main .phrase h1 {
+    margin-top: 0;
+}
+
+main video {
+    position: absolute;
+    z-index: -2;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: auto;
+}
+
+aside {
+    width: 20%;
+    min-height: 100vh;
+    font-family: 'Oswald', sans-serif;
+    color: #423a36;
+    position: fixed;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .2);
+
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+aside img {
+    align-self: center;
+    padding-top: 24px;
+}
+
+aside .slogan {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.7em;
+}
+
+aside .links {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+aside .links li {
+    padding: .5rem .8rem;
+    margin: 1rem 0;
+    border-radius: 4px;
+}
+
+aside .links a:hover {
+    cursor: pointer;
+    color: #275a60;
+}
+
+aside .links a:hover li {
+    background-color: #d3eaf4;
+}
+
+aside .links li i {
+    padding-right: .4rem;
+}
+
+aside .links a {
+    text-decoration: none;
+    color: #423a36;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+section {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 0 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #ddd;
+}
+
+section h2 {
+    font-size: 2.4rem;
+    font-family: 'Oswald', sans-serif;
+    color: #423a36;
+}
+
+section h3 {
+    font-size: 1.3rem;
+}
+
+section .stories {
+    display: flex;
+    position: relative;
+    padding-right: 1rem;
+}
+
+section .stories::before,
+section .stories::after {
+    content: '';
+    position: absolute;
+    border-right: 2px solid #dbd3e3;
+    right: 0;
+}
+
+section .stories::before {
+    top: 0;
+    bottom: 49%;
+    transform: rotate(-15deg);
+}
+
+section .stories::after {
+    top: 49%;
+    bottom: 0;
+    transform: rotate(15deg);
+}
+
+section .stories > div {
+    padding: .4rem 2rem;
+    margin-right: 2rem;
+    background-color: #e1f9ea;
+}
+
+section .stories h3 {
+    color: #423a36;
+}
+
+section .stories p {
+    color: #63646a;
+}
+
+.vertical-division {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
