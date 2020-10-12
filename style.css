@@ -12,38 +12,7 @@ main {
     overflow-x: hidden;
 }
 
-main #video {
-    width: 100%;
-    position: relative;
-    height: 86vh;
-}
-
-main .overlay {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-main .phrase {
-    color: #ffffff;
-    font-family: 'Oswald', sans-serif;
-    font-size: 2rem;
-}
-
-main .phrase h1 {
-    margin-top: 0;
-}
-
-main video {
-    position: absolute;
-    z-index: -2;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: auto;
-}
+/* aside */
 
 aside {
     width: 20%;
@@ -103,6 +72,8 @@ aside .links a {
     text-transform: uppercase;
 }
 
+/* General sections */
+
 section {
     max-width: 1000px;
     margin: 3rem auto;
@@ -120,6 +91,8 @@ section h2 {
 section h3 {
     font-size: 1.3rem;
 }
+
+/* Stories */
 
 section .stories {
     display: flex;
@@ -158,18 +131,95 @@ section .stories h3 {
 }
 
 section .stories p {
-    color: #63646a;
+    color: #535457;
 }
 
-#fit .degrees {
+/* Video division */
+
+#video {
+    width: 100%;
+    position: relative;
+    height: 86vh;
+}
+
+#video .overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#video .phrase {
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+}
+
+#video .phrase h1 {
+    margin-top: 0;
+}
+
+#video video {
+    position: absolute;
+    z-index: -2;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: auto;
+    background-color: #a3ceed;
+}
+
+/* Find Your Fit section */
+
+#fit > h2 {
+    margin-bottom: 0;
+}
+
+/* Stories section */
+
+#stories .grid li {
+    background-position: center;
+    background-size:cover;
+    position: relative;
+    border: 12px solid #fff;
+    font-size: 1.2rem;
+}
+
+#stories .grid span {
+    width: calc(100% - 8px);
+    color: #ffffff;
+    padding: 12px 4px;
+    bottom: 0;
+    position: absolute;
+    background-color: #efefef;
+    color: #222;
+    transition: .08s all;
+}
+
+#stories .grid li:hover span {
+    box-shadow: inset 0 0 0 2px #ffebb7;
+
+    background-color: #333;
+    color: #fff;
+}
+
+#stories .grid li:hover {
+    border-color: #333;
+}
+
+/* Section grid */
+
+section .grid {
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin-top: 2rem;
 }
 
-#fit .degrees li {
+section .grid li {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -183,12 +233,12 @@ section .stories p {
     border: 4px solid transparent;
 }
 
-#fit .degrees a {
+section .grid a {
     text-decoration: none !important;
 }
 
 
-#fit .degrees li:hover {
+section .grid li:hover {
     color: #ffffff;
     background-color: #333 !important;
     cursor: pointer;
@@ -196,13 +246,15 @@ section .stories p {
     box-shadow: inset 0 0 0 2px #ffebb7;
 }
 
-#fit .degrees li:hover img {
+section .grid li:hover img {
     filter: invert(100%) sepia(100%);
 }
 
-#fit .degrees a:nth-child(even) li {
+section .grid a:nth-child(even) li {
     background-color: #efefef;
 }
+
+/* Cascading styles */
 
 .vertical-division {
     display: flex;
